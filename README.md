@@ -8,7 +8,7 @@ This program is designed to automate the process of scheduling appointments at t
    3. tries: Number of Times to Attempt Login; default=4
    4. pathToChromeDriver: path/to/chromedriver
    5. d: Display Options; default=None; "headless" hides chromedriver from launching
-2. Download [Google Chromedriver] (https://chromedriver.chromium.org/downloads).
+2. Download [Google Chromedriver](https://chromedriver.chromium.org/downloads).
 3. Open terminal:
    1. ```launchctl start /System/Library/LaunchDaemons/com.vix.cron.plist``` to launch cron.
    2. ```chmod a+x path/to/scheduler.py``` to instanstiate permissions.
