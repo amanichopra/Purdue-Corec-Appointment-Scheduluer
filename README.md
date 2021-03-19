@@ -2,7 +2,7 @@
 
 This program is designed to automate the process of scheduling appointments at the corec. Depending on how the cronjob is set up, the automation can occur hourly, daily, weekly, or at any desired time interval. The usage for linux is summarized below. 
 
-1. Download scheduler.py from the repo. Ensure "imageio" and "selenium" are installed. The CL arguments for the script are as follows:
+1. Download scheduler.py from the repo. Ensure "imageio" and "selenium" are installed. Place the path to python at the top of the file. The CL arguments for the script are as follows:
    1. username: Purdue Login
    2. password: Duo Password (ex. ####,push)
    3. tries: Number of Times to Attempt Login; default=4
