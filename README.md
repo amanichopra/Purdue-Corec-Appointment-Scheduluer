@@ -23,6 +23,7 @@ This program is designed to automate the process of scheduling appointments at t
 ```* * * * * python3 path/to/scheduler.py --username yourUsername --password yourPassword --tries numTries --pathToChromeDriver path/to/chromedriver --d headless```
 
 Be sure to enter the appropriate cron expression for the desired frequency (ex. "30 12 * * *" will run the script daily at 12:30). Refer to these crontab [resources](https://crontab.guru/).
+
 4. Done!
 
 
