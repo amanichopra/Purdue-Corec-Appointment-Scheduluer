@@ -17,8 +17,16 @@ args = parser.parse_args()
 
 chrome_options = Options()
 chrome_options.add_argument('--incognito')
-if args.d: chrome_options.add_argument(args.d)
-chrome_options.add_argument("--window-size=1792,1120") # ensure this matches your screen resolution
+if args.d:
+    # ensure proper functioning for headless
+    chrome_options.add_argument("--window-size=1920,1080")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--proxy-server='direct://'")
+    chrome_options.add_argument("--proxy-bypass-list=*")
+    chrome_options.add_argument("--start-maximized")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("no-sandbox")
 
 driver = webdriver.Chrome(args.pathToChromedriver,options=chrome_options)
 for i in range(args.tries):
